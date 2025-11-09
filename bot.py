@@ -15,7 +15,7 @@ from telebot import types
 logging.basicConfig(level=logging.INFO)
 BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN")
 CHANNEL_ID = os.getenv("CHANNEL_ID", "@YOUR_CHANNEL")  # optional, or leave blank
-DATA_URL = os.getenv("DATA_URL", "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/data.json")
+DATA_URL = os.getenv("DATA_URL", "https://github.com/Error1234543/Sonicx/blob/main/data.json")
 WEB_URL = os.getenv("WEB_URL", "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app")
 OWNER_ID = int(os.getenv("OWNER_ID", "8226637107"))  # your Telegram ID
 
