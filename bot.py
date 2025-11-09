@@ -35,7 +35,7 @@ def start(msg):
     keyboard = types.InlineKeyboardMarkup(row_width=2)
     # Join Channel button (opens channel link)
     channel_username = CHANNEL_ID.lstrip('@')
-    join_url = f"https://t.me/{channel_username}"
+    join_url = f"https://t.me/NEET_JEE_GUJ"
     keyboard.add(types.InlineKeyboardButton("📢 Join Channel", url=join_url))
     # Done button to verify membership
     keyboard.add(types.InlineKeyboardButton("✅ Done", callback_data="check_join"))
