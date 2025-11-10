@@ -1,31 +1,14 @@
 {
   "STD 12": {
     "Physics": [
-      {"label": "Test 1", "path": "std12_physics/physics1.html"},
-      {"label": "Test 2", "path": "std12_physics/physics2.html"}
+      {"label": "Test 1", "path": "std12/physics/test1.html"},
+      {"label": "Test 2", "path": "std12/physics/test2.html"}
     ],
     "Chemistry": [
-      {"label": "Test 1", "path": "std12_chemistry/chem1.html"}
+      {"label": "Test 1", "path": "std12/chemistry/test1.html"}
     ],
     "Biology": [
-      {"label": "Test 1", "path": "std12_biology/bio1.html"}
+      {"label": "Test 1", "path": "std12/biology/test1.html"}
     ]
-  },
-  "STD 11": {
-    "Physics": [
-      {"label": "Test 1", "path": "std11_physics/physics1.html"}
-    ],
-    "Chemistry": [
-      {"label": "Test 1", "path": "std11_chemistry/chem1.html"}
-    ],
-    "Biology": [
-      {"label": "Test 1", "path": "std11_biology/bio1.html"}
-    ]
-  },
-  "Mock Tests": [
-    {"label": "Mock Test 1", "path": "mock_tests/mock1.html"}
-  ],
-  "GUJCET": [
-    {"label": "Test 1", "path": "gujcet_x/gujcet1.html"}
-  ]
+  }
 }
