@@ -209,15 +209,13 @@
       {"label": "TEST 9", "path": "gujcet_x/gujcet9.html"}
     ]
   },
-  "External/Other Links": {
-    "Yakeen NEET 2025 Gujarati Test": [
-      {"label": "Open Yakeen NEET 2025 Gujarati Test", "path": "https://quizardv2.dev-boi.xyz/batch/65dc520f8862110018b2ab1d/Yakeen%20NEET%20Gujarati%202025/batch_test"}
-    ],
-    "Lakshya NEET Gujarati 2025": [
-      {"label": "Open Lakshya NEET Gujarati 2025", "path": "https://quizardv2.dev-boi.xyz/batch/65db6ebbceb65f001847a56e/Lakshya%20NEET%20Gujarati%202025/batch_test"}
-    ],
-    "ALLEN Gujarati": [
-      {"label": "Open ALLEN Gujarati", "path": "lakshya_25/allen.html"}
-    ],
-    "LAKSHYA GUJ 26 PDF": [
-      {"label": "Open LAKSHYA
+  "Other Folders/Categories": [
+    "🌱 NEET X BIO",
+    "📚 NCERT MATERIAL",
+    "🧾 HANDWRITTEN NOTES",
+    "📜 PYQ COLLECTION",
+    "🎯 EXTRA MATERIAL",
+    "🔔 UPDATES",
+    "🔗 IMPORTANT LINKS"
+  ]
+}
