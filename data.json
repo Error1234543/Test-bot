@@ -1,14 +1,75 @@
 {
   "STD 12": {
     "Physics": [
-      {"label": "Test 1", "path": "std12/physics/test1.html"},
-      {"label": "Test 2", "path": "std12/physics/test2.html"}
+      {"label": "TEST 1", "path": "std12_physics/physics1.html"},
+      {"label": "TEST 2", "path": "std12_physics/physics2.html"},
+      {"label": "TEST 3", "path": "std12_physics/physics3.html"},
+      {"label": "TEST 4", "path": "std12_physics/physics4.html"},
+      {"label": "TEST 5", "path": "std12_physics/physics5.html"},
+      {"label": "TEST 6", "path": "std12_physics/physics6.html"},
+      {"label": "TEST 7", "path": "std12_physics/physics7.html"},
+      {"label": "TEST 8", "path": "std12_physics/physics8.html"},
+      {"label": "TEST 9", "path": "std12_physics/physics9.html"},
+      {"label": "TEST 10", "path": "std12_physics/physics10.html"},
+      {"label": "TEST 11", "path": "std12_physics/physics11.html"},
+      {"label": "TEST 12", "path": "std12_physics/physics12.html"},
+      {"label": "TEST 13", "path": "std12_physics/physics13.html"},
+      {"label": "TEST 14", "path": "std12_physics/physics14.html"}
     ],
     "Chemistry": [
-      {"label": "Test 1", "path": "std12/chemistry/test1.html"}
+      {"label": "TEST 1", "path": "std12_chemistry/chem1.html"},
+      {"label": "TEST 2", "path": "std12_chemistry/chem2.html"},
+      {"label": "TEST 3", "path": "std12_chemistry/chem3.html"},
+      {"label": "TEST 4", "path": "std12_chemistry/chem4.html"},
+      {"label": "TEST 5", "path": "std12_chemistry/chem5.html"},
+      {"label": "TEST 6", "path": "std12_chemistry/chem6.html"},
+      {"label": "TEST 7", "path": "std12_chemistry/chem7.html"},
+      {"label": "TEST 8", "path": "std12_chemistry/chem8.html"},
+      {"label": "TEST 9", "path": "std12_chemistry/chem9.html"},
+      {"label": "TEST 10", "path": "std12_chemistry/chem10.html"},
+      {"label": "TEST 11", "path": "std12_chemistry/chem11.html"},
+      {"label": "TEST 12", "path": "std12_chemistry/chem12.html"},
+      {"label": "TEST 13", "path": "std12_chemistry/chem13.html"},
+      {"label": "TEST 14", "path": "std12_chemistry/chem14.html"},
+      {"label": "TEST 15", "path": "std12_chemistry/chem15.html"}
     ],
     "Biology": [
-      {"label": "Test 1", "path": "std12/biology/test1.html"}
+      {"label": "TEST 1", "path": "std12_biology/bio1.html"},
+      {"label": "TEST 2", "path": "std12_biology/bio2.html"},
+      {"label": "TEST 3", "path": "std12_biology/bio3.html"},
+      {"label": "TEST 4", "path": "std12_biology/bio4.html"},
+      {"label": "TEST 5", "path": "std12_biology/bio5.html"},
+      {"label": "TEST 6", "path": "std12_biology/bio6.html"},
+      {"label": "TEST 7", "path": "std12_biology/bio7.html"},
+      {"label": "TEST 8", "path": "std12_biology/bio8.html"},
+      {"label": "TEST 9", "path": "std12_biology/bio9.html"},
+      {"label": "TEST 10", "path": "std12_biology/bio10.html"},
+      {"label": "TEST 11", "path": "std12_biology/bio11.html"},
+      {"label": "TEST 12", "path": "std12_biology/bio12.html"},
+      {"label": "TEST 13", "path": "std12_biology/bio13.html"}
+    ],
+    "Mock Tests": [
+      {"label": "Mock Test 1", "path": "mock_tests/mock1.html"},
+      {"label": "Mock Test 2", "path": "mock_tests/mock2.html"},
+      {"label": "Mock Test 3", "path": "mock_tests/mock3.html"},
+      {"label": "Mock Test 4", "path": "mock_tests/mock4.html"},
+      {"label": "Mock Test 5", "path": "mock_tests/mock5.html"}
+    ],
+    "Gujcet": [
+      {"label": "TEST 1", "path": "gujcet_x/gujcet1.html"},
+      {"label": "TEST 2", "path": "gujcet_x/gujcet2.html"},
+      {"label": "TEST 3", "path": "gujcet_x/gujcet3.html"}
+    ]
+  },
+  "STD 11": {
+    "Physics": [
+      {"label": "TEST 1", "path": "std11_physics/physics1.html"}
+    ],
+    "Chemistry": [
+      {"label": "TEST 1", "path": "std11_chemistry/chem1.html"}
+    ],
+    "Biology": [
+      {"label": "TEST 1", "path": "std11_biology/bio1.html"}
     ]
   }
 }
