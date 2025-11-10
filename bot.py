@@ -2,7 +2,11 @@ import os
 import json
 import telebot
 from telebot import types
+from http.server import BaseHTTPRequestHandler, HTTPServer
+import threading
+import logging
 
+# ---------------- CONFIG ----------------
 BOT_TOKEN = "8510670200:AAGN0wkvB8yYOOvsU3Jrf4pWAS5q0zR3CGI"
 WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"  # GitHub Pages URL
 
@@ -12,7 +16,23 @@ bot = telebot.TeleBot(BOT_TOKEN)
 with open("data.json", "r") as f:
     DATA = json.load(f)
 
+# ---------------- HEALTH CHECK SERVER ----------------
+class HealthHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-type", "text/plain")
+        self.end_headers()
+        self.wfile.write(b"OK")  # Simple response for health check
 
+def run_health_server():
+    server = HTTPServer(("0.0.0.0", 8000), HealthHandler)
+    logging.info("Health-check server running on port 8000")
+    server.serve_forever()
+
+# Start health server in a separate thread
+threading.Thread(target=run_health_server, daemon=True).start()
+
+# ---------------- TELEGRAM BOT ----------------
 @bot.message_handler(commands=['start'])
 def start_menu(msg):
     kb = types.InlineKeyboardMarkup()
@@ -57,5 +77,6 @@ def callback_handler(call):
         bot.edit_message_text("📘 Select Class:", call.message.chat.id,
                               call.message.message_id, reply_markup=kb)
 
-
+# ---------------- START BOT ----------------
+logging.info("🤖 Bot started. Health server running on port 8000.")
 bot.infinity_polling()
