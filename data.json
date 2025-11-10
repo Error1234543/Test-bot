@@ -1,75 +1,223 @@
 {
-  "STD 12": {
-    "Physics": [
-      {"label": "TEST 1", "path": "std12_physics/physics1.html"},
-      {"label": "TEST 2", "path": "std12_physics/physics2.html"},
-      {"label": "TEST 3", "path": "std12_physics/physics3.html"},
-      {"label": "TEST 4", "path": "std12_physics/physics4.html"},
-      {"label": "TEST 5", "path": "std12_physics/physics5.html"},
-      {"label": "TEST 6", "path": "std12_physics/physics6.html"},
-      {"label": "TEST 7", "path": "std12_physics/physics7.html"},
-      {"label": "TEST 8", "path": "std12_physics/physics8.html"},
-      {"label": "TEST 9", "path": "std12_physics/physics9.html"},
-      {"label": "TEST 10", "path": "std12_physics/physics10.html"},
-      {"label": "TEST 11", "path": "std12_physics/physics11.html"},
-      {"label": "TEST 12", "path": "std12_physics/physics12.html"},
-      {"label": "TEST 13", "path": "std12_physics/physics13.html"},
-      {"label": "TEST 14", "path": "std12_physics/physics14.html"}
+  "NEET/STD 12 Tests": {
+    "Physics (NEET Internal)": [
+      {"label": "TEST 1 (PHY)", "path": "std12_physics/physics1.html"},
+      {"label": "TEST 2 (PHY)", "path": "std12_physics/physics2.html"},
+      {"label": "TEST 3 (PHY)", "path": "std12_physics/physics3.html"},
+      {"label": "TEST 4 (PHY)", "path": "std12_physics/physics4.html"},
+      {"label": "TEST 5 (PHY)", "path": "std12_physics/physics5.html"},
+      {"label": "TEST 6 (PHY)", "path": "std12_physics/physics6.html"},
+      {"label": "TEST 7 (PHY)", "path": "std12_physics/physics7.html"},
+      {"label": "TEST 8 (PHY)", "path": "std12_physics/physics8.html"},
+      {"label": "TEST 9 (PHY)", "path": "std12_physics/physics9.html"},
+      {"label": "TEST 10 (PHY)", "path": "std12_physics/physics10.html"},
+      {"label": "TEST 11 (PHY)", "path": "std12_physics/physics11.html"},
+      {"label": "TEST 12 (PHY)", "path": "std12_physics/physics12.html"},
+      {"label": "TEST 13 (PHY)", "path": "std12_physics/physics13.html"},
+      {"label": "TEST 14 (PHY)", "path": "std12_physics/physics14.html"}
     ],
-    "Chemistry": [
-      {"label": "TEST 1", "path": "std12_chemistry/chem1.html"},
-      {"label": "TEST 2", "path": "std12_chemistry/chem2.html"},
-      {"label": "TEST 3", "path": "std12_chemistry/chem3.html"},
-      {"label": "TEST 4", "path": "std12_chemistry/chem4.html"},
-      {"label": "TEST 5", "path": "std12_chemistry/chem5.html"},
-      {"label": "TEST 6", "path": "std12_chemistry/chem6.html"},
-      {"label": "TEST 7", "path": "std12_chemistry/chem7.html"},
-      {"label": "TEST 8", "path": "std12_chemistry/chem8.html"},
-      {"label": "TEST 9", "path": "std12_chemistry/chem9.html"},
-      {"label": "TEST 10", "path": "std12_chemistry/chem10.html"},
-      {"label": "TEST 11", "path": "std12_chemistry/chem11.html"},
-      {"label": "TEST 12", "path": "std12_chemistry/chem12.html"},
-      {"label": "TEST 13", "path": "std12_chemistry/chem13.html"},
-      {"label": "TEST 14", "path": "std12_chemistry/chem14.html"},
-      {"label": "TEST 15", "path": "std12_chemistry/chem15.html"}
+    "Chemistry (NEET Internal)": [
+      {"label": "TEST 1 (CHEM)", "path": "std12_chemistry/chem1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "std12_chemistry/chem2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "std12_chemistry/chem3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "std12_chemistry/chem4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "std12_chemistry/chem5.html"},
+      {"label": "TEST 6 (CHEM)", "path": "std12_chemistry/chem6.html"},
+      {"label": "TEST 7 (CHEM)", "path": "std12_chemistry/chem7.html"},
+      {"label": "TEST 8 (CHEM)", "path": "std12_chemistry/chem8.html"},
+      {"label": "TEST 9 (CHEM)", "path": "std12_chemistry/chem9.html"},
+      {"label": "TEST 10 (CHEM)", "path": "std12_chemistry/chem10.html"},
+      {"label": "TEST 11 (CHEM)", "path": "std12_chemistry/chem11.html"},
+      {"label": "TEST 12 (CHEM)", "path": "std12_chemistry/chem12.html"},
+      {"label": "TEST 13 (CHEM)", "path": "std12_chemistry/chem13.html"},
+      {"label": "TEST 14 (CHEM)", "path": "std12_chemistry/chem14.html"},
+      {"label": "TEST 15 (CHEM)", "path": "std12_chemistry/chem15.html"}
     ],
-    "Biology": [
-      {"label": "TEST 1", "path": "std12_biology/bio1.html"},
-      {"label": "TEST 2", "path": "std12_biology/bio2.html"},
-      {"label": "TEST 3", "path": "std12_biology/bio3.html"},
-      {"label": "TEST 4", "path": "std12_biology/bio4.html"},
-      {"label": "TEST 5", "path": "std12_biology/bio5.html"},
-      {"label": "TEST 6", "path": "std12_biology/bio6.html"},
-      {"label": "TEST 7", "path": "std12_biology/bio7.html"},
-      {"label": "TEST 8", "path": "std12_biology/bio8.html"},
-      {"label": "TEST 9", "path": "std12_biology/bio9.html"},
-      {"label": "TEST 10", "path": "std12_biology/bio10.html"},
-      {"label": "TEST 11", "path": "std12_biology/bio11.html"},
-      {"label": "TEST 12", "path": "std12_biology/bio12.html"},
-      {"label": "TEST 13", "path": "std12_biology/bio13.html"}
+    "Biology (NEET Internal)": [
+      {"label": "TEST 1 (BIO)", "path": "std12_biology/bio1.html"},
+      {"label": "TEST 2 (BIO)", "path": "std12_biology/bio2.html"},
+      {"label": "TEST 3 (BIO)", "path": "std12_biology/bio3.html"},
+      {"label": "TEST 4 (BIO)", "path": "std12_biology/bio4.html"},
+      {"label": "TEST 5 (BIO)", "path": "std12_biology/bio5.html"},
+      {"label": "TEST 6 (BIO)", "path": "std12_biology/bio6.html"},
+      {"label": "TEST 7 (BIO)", "path": "std12_biology/bio7.html"},
+      {"label": "TEST 8 (BIO)", "path": "std12_biology/bio8.html"},
+      {"label": "TEST 9 (BIO)", "path": "std12_biology/bio9.html"},
+      {"label": "TEST 10 (BIO)", "path": "std12_biology/bio10.html"},
+      {"label": "TEST 11 (BIO)", "path": "std12_biology/bio11.html"},
+      {"label": "TEST 12 (BIO)", "path": "std12_biology/bio12.html"},
+      {"label": "TEST 13 (BIO)", "path": "std12_biology/bio13.html"}
+    ]
+  },
+  "STD 12 Board Tests": {
+    "Physics (Board)": [
+      {"label": "TEST 1 (PHY)", "path": "std12_board/board1.html"},
+      {"label": "TEST 2 (PHY)", "path": "std12_board/board2.html"},
+      {"label": "TEST 3 (PHY)", "path": "std12_board/board3.html"},
+      {"label": "TEST 4 (PHY)", "path": "std12_board/board4.html"},
+      {"label": "TEST 5 (PHY)", "path": "std12_board/board5.html"},
+      {"label": "TEST 6 (PHY)", "path": "std12_board/board6.html"},
+      {"label": "TEST 7 (PHY)", "path": "std12_board/board7.html"},
+      {"label": "TEST 8 (PHY)", "path": "std12_board/board8.html"},
+      {"label": "TEST 9 (PHY)", "path": "std12_board/board9.html"}
     ],
+    "Chemistry (Board)": [
+      {"label": "TEST 1 (CHEM)", "path": "std12_board/board10.html"},
+      {"label": "TEST 2 (CHEM)", "path": "std12_board/board11.html"},
+      {"label": "TEST 3 (CHEM)", "path": "std12_board/board12.html"},
+      {"label": "TEST 4 (CHEM)", "path": "std12_board/board13.html"},
+      {"label": "TEST 5 (CHEM)", "path": "std12_board/board14.html"},
+      {"label": "TEST 6 (CHEM)", "path": "std12_board/board15.html"},
+      {"label": "TEST 7 (CHEM)", "path": "std12_board/board16.html"},
+      {"label": "TEST 8 (CHEM)", "path": "std12_board/board17.html"},
+      {"label": "TEST 9 (CHEM)", "path": "std12_board/board18.html"},
+      {"label": "TEST 10 (CHEM)", "path": "std12_board/board19.html"},
+      {"label": "TEST 11 (CHEM)", "path": "std12_board/board20.html"}
+    ],
+    "Biology (Board)": [
+      {"label": "TEST 1 (BIO)", "path": "std12_board/bio1.html"},
+      {"label": "TEST 2 (BIO)", "path": "std12_board/bio2.html"},
+      {"label": "TEST 3 (BIO)", "path": "std12_board/bio3.html"},
+      {"label": "TEST 4 (BIO)", "path": "std12_board/bio4.html"},
+      {"label": "TEST 5 (BIO)", "path": "std12_board/bio5.html"},
+      {"label": "TEST 6 (BIO)", "path": "std12_board/bio6.html"},
+      {"label": "TEST 7 (BIO)", "path": "std12_board/bio7.html"},
+      {"label": "TEST 8 (BIO)", "path": "std12_board/bio8.html"},
+      {"label": "TEST 9 (BIO)", "path": "std12_board/bio9.html"}
+    ],
+    "Maths (Board)": [
+      {"label": "TEST 1", "path": "maths/maths1.html"},
+      {"label": "TEST 2", "path": "maths/maths2.html"},
+      {"label": "TEST 3", "path": "maths/maths3.html"},
+      {"label": "TEST 4", "path": "maths/maths4.html"},
+      {"label": "TEST 5", "path": "maths/maths5.html"},
+      {"label": "TEST 6", "path": "maths/maths6.html"},
+      {"label": "TEST 7", "path": "maths/maths7.html"},
+      {"label": "TEST 8", "path": "maths/maths8.html"},
+      {"label": "TEST 9", "path": "maths/maths9.html"}
+    ]
+  },
+  "NEET X PHY (Chapter-wise Tests)": {
+    "STD XII - Chap 1": [
+      {"label": "TEST 1", "path": "neetx26/phyx1.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx2.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx3.html"},
+      {"label": "TEST 4", "path": "neetx26/phyx4.html"}
+    ],
+    "STD XII - Chap 2": [
+      {"label": "TEST 1", "path": "neetx26/phyx5.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx6.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx7.html"}
+    ],
+    "STD XII - Chap 3": [
+      {"label": "TEST 1", "path": "neetx26/phyx8.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx9.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx10.html"},
+      {"label": "TEST 4", "path": "neetx26/phyx11.html"}
+    ],
+    "STD XII - Chap 4": [
+      {"label": "TEST 1", "path": "neetx26/phyx12.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx13.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx14.html"},
+      {"label": "TEST 4", "path": "neetx26/phyx15.html"}
+    ],
+    "STD XII - Chap 5": [
+      {"label": "TEST 1", "path": "neetx26/phyx16.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx17.html"}
+    ],
+    "STD XII - Chap 6": [
+      {"label": "TEST 1", "path": "neetx26/phyx18.html"}
+    ],
+    "STD XII - Chap 7": [
+      {"label": "TEST 1", "path": "neetx26/phyx19.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx20.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx21.html"},
+      {"label": "TEST 4", "path": "neetx26/phyx22.html"}
+    ],
+    "STD XII - Chap 8": [
+      {"label": "TEST 1", "path": "neetx26/phyx23.html"}
+    ],
+    "STD XII - Chap 9": [
+      {"label": "TEST 1", "path": "neetx26/phyx24.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx25.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx26.html"},
+      {"label": "TEST 4", "path": "neetx26/phyx27.html"}
+    ],
+    "STD XII - Chap 10": [
+      {"label": "TEST 1", "path": "neetx26/phyx28.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx29.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx30.html"}
+    ],
+    "STD XII - Chap 11": [
+      {"label": "TEST 1", "path": "neetx26/phyx31.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx32.html"}
+    ],
+    "STD XII - Chap 12": [
+      {"label": "TEST 1", "path": "neetx26/phyx33.html"}
+    ],
+    "STD XII - Chap 13": [
+      {"label": "TEST 1", "path": "neetx26/phyx34.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx35.html"}
+    ],
+    "STD XII - Chap 14": [
+      {"label": "TEST 1", "path": "neetx26/phyx36.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx37.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx39.html"}
+    ],
+    "STD 11 - Chap 1": [
+      {"label": "TEST 1", "path": "neetx26/phyx40.html"},
+      {"label": "TEST 2", "path": "neetx26/phyx41.html"},
+      {"label": "TEST 3", "path": "neetx26/phyx42.html"}
+    ]
+  },
+  "Mock Tests & GUJCET": {
     "Mock Tests": [
       {"label": "Mock Test 1", "path": "mock_tests/mock1.html"},
       {"label": "Mock Test 2", "path": "mock_tests/mock2.html"},
       {"label": "Mock Test 3", "path": "mock_tests/mock3.html"},
       {"label": "Mock Test 4", "path": "mock_tests/mock4.html"},
-      {"label": "Mock Test 5", "path": "mock_tests/mock5.html"}
+      {"label": "Mock Test 5", "path": "mock_tests/mock5.html"},
+      {"label": "Mock Test 6", "path": "mock_tests/mock6.html"},
+      {"label": "Mock Test 7", "path": "mock_tests/mock7.html"},
+      {"label": "Mock Test 8", "path": "mock_tests/mock8.html"},
+      {"label": "Mock Test 9", "path": "mock_tests/mock9.html"},
+      {"label": "Mock Test 10", "path": "mock_tests/mock10.html"},
+      {"label": "Mock Test 11", "path": "mock_tests/mock11.html"},
+      {"label": "Mock Test 12", "path": "mock_tests/mock12.html"},
+      {"label": "Mock Test 13", "path": "mock_tests/mock13.html"},
+      {"label": "Mock Test 14", "path": "mock_tests/mock14.html"},
+      {"label": "Mock Test 15", "path": "mock_tests/mock15.html"},
+      {"label": "Mock Test 16", "path": "mock_tests/mock16.html"},
+      {"label": "Mock Test 17", "path": "mock_tests/mock17.html"},
+      {"label": "Mock Test 18", "path": "mock_tests/mock18.html"},
+      {"label": "Mock Test 19", "path": "mock_tests/mock19.html"},
+      {"label": "Mock Test 20", "path": "mock_tests/mock20.html"},
+      {"label": "Mock Test 21", "path": "mock_tests/mock21.html"},
+      {"label": "Mock Test 22", "path": "mock_tests/mock22.html"},
+      {"label": "Mock Test 23", "path": "mock_tests/mock23.html"},
+      {"label": "Mock Test 24", "path": "mock_tests/mock24.html"}
     ],
-    "Gujcet": [
+    "GUJCET Tests": [
       {"label": "TEST 1", "path": "gujcet_x/gujcet1.html"},
       {"label": "TEST 2", "path": "gujcet_x/gujcet2.html"},
-      {"label": "TEST 3", "path": "gujcet_x/gujcet3.html"}
+      {"label": "TEST 3", "path": "gujcet_x/gujcet3.html"},
+      {"label": "TEST 4", "path": "gujcet_x/gujcet4.html"},
+      {"label": "TEST 5", "path": "gujcet_x/gujcet5.html"},
+      {"label": "TEST 6", "path": "gujcet_x/gujcet6.html"},
+      {"label": "TEST 7", "path": "gujcet_x/gujcet7.html"},
+      {"label": "TEST 8", "path": "gujcet_x/gujcet8.html"},
+      {"label": "TEST 9", "path": "gujcet_x/gujcet9.html"}
     ]
   },
-  "STD 11": {
-    "Physics": [
-      {"label": "TEST 1", "path": "std11_physics/physics1.html"}
+  "External/Other Links": {
+    "Yakeen NEET 2025 Gujarati Test": [
+      {"label": "Open Yakeen NEET 2025 Gujarati Test", "path": "https://quizardv2.dev-boi.xyz/batch/65dc520f8862110018b2ab1d/Yakeen%20NEET%20Gujarati%202025/batch_test"}
     ],
-    "Chemistry": [
-      {"label": "TEST 1", "path": "std11_chemistry/chem1.html"}
+    "Lakshya NEET Gujarati 2025": [
+      {"label": "Open Lakshya NEET Gujarati 2025", "path": "https://quizardv2.dev-boi.xyz/batch/65db6ebbceb65f001847a56e/Lakshya%20NEET%20Gujarati%202025/batch_test"}
     ],
-    "Biology": [
-      {"label": "TEST 1", "path": "std11_biology/bio1.html"}
-    ]
-  }
-}
+    "ALLEN Gujarati": [
+      {"label": "Open ALLEN Gujarati", "path": "lakshya_25/allen.html"}
+    ],
+    "LAKSHYA GUJ 26 PDF": [
+      {"label": "Open LAKSHYA
