@@ -209,13 +209,96 @@
       {"label": "TEST 9", "path": "gujcet_x/gujcet9.html"}
     ]
   },
-  "Other Folders/Categories": [
-    "🌱 NEET X BIO",
-    "📚 NCERT MATERIAL",
-    "🧾 HANDWRITTEN NOTES",
-    "📜 PYQ COLLECTION",
-    "🎯 EXTRA MATERIAL",
-    "🔔 UPDATES",
-    "🔗 IMPORTANT LINKS"
-  ]
+  {
+  "NEET X BIO": {
+    "CHAP-1": [
+      {"label": "TEST 1", "path": "bioxneet/biox1.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox2.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox3.html"},
+      {"label": "TEST 4", "path": "bioxneet/biox4.html"},
+      {"label": "TEST 5", "path": "bioxneet/biox5.html"}
+    ],
+    "CHAP-2": [
+      {"label": "TEST 1", "path": "bioxneet/biox6.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox7.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox8.html"},
+      {"label": "TEST 4", "path": "bioxneet/biox9.html"},
+      {"label": "TEST 5", "path": "bioxneet/biox10.html"},
+      {"label": "TEST 6", "path": "bioxneet/biox11.html"},
+      {"label": "TEST 7", "path": "bioxneet/biox12.html"}
+    ],
+    "CHAP-3": [
+      {"label": "TEST 1", "path": "bioxneet/biox13.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox14.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox15.html"},
+      {"label": "TEST 4", "path": "bioxneet/biox16.html"},
+      {"label": "TEST 5", "path": "bioxneet/biox17.html"}
+    ],
+    "CHAP-4": [
+      {"label": "TEST 1", "path": "bioxneet/biox18.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox19.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox20.html"},
+      {"label": "TEST 4", "path": "bioxneet/biox21.html"}
+    ],
+    "CHAP-5": [
+      {"label": "TEST 1", "path": "bioxneet/biox22.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox23.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox24.html"},
+      {"label": "TEST 4", "path": "bioxneet/biox25.html"},
+      {"label": "TEST 5", "path": "bioxneet/biox26.html"},
+      {"label": "TEST 6", "path": "bioxneet/biox27.html"}
+    ],
+    "CHAP-6": [
+      {"label": "TEST 1", "path": "bioxneet/biox28.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox29.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox30.html"},
+      {"label": "TEST 4", "path": "bioxneet/biox31.html"},
+      {"label": "TEST 5", "path": "bioxneet/biox32.html"}
+    ],
+    "CHAP-7": [
+      {"label": "TEST 1", "path": "bioxneet/biox33.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox34.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox35.html"}
+    ],
+    "CHAP-8": [
+      {"label": "TEST 1", "path": "bioxneet/biox36.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox37.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox38.html"},
+      {"label": "TEST 4", "path": "bioxneet/biox39.html"},
+      {"label": "TEST 5", "path": "bioxneet/biox40.html"},
+      {"label": "TEST 6", "path": "bioxneet/biox41.html"},
+      {"label": "TEST 7", "path": "bioxneet/biox42.html"}
+    ],
+    "CHAP-9": [
+      {"label": "TEST 1", "path": "bioxneet/biox43.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox44.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox45.html"}
+    ],
+    "CHAP-10": [
+      {"label": "TEST 1", "path": "bioxneet/biox46.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox47.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox48.html"}
+    ],
+    "CHAP-11": [
+      {"label": "TEST 1", "path": "bioxneet/biox49.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox50.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox51.html"}
+    ],
+    "CHAP-12": [
+      {"label": "TEST 1", "path": "bioxneet/biox52.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox53.html"}
+    ],
+    "CHAP-13": [
+      {"label": "TEST 1", "path": "bioxneet/biox54.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox55.html"},
+      {"label": "TEST 3", "path": "bioxneet/biox56.html"}
+    ],
+    "CHAP-14": [
+      {"label": "TEST 1", "path": "bioxneet/biox57.html"},
+      {"label": "TEST 2", "path": "bioxneet/biox58.html"}
+    ],
+    "CHAP-15": [
+      {"label": "TEST 1", "path": "bioxneet/biox59.html"}
+    ]
+  }
 }
