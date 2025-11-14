@@ -239,7 +239,6 @@
       {"label": "TEST 4", "path": "bioxneet/biox4.html"},
       {"label": "TEST 5", "path": "bioxneet/biox5.html"}
     ],
-
     "CHAP-2": [
       {"label": "TEST 1", "path": "bioxneet/biox6.html"},
       {"label": "TEST 2", "path": "bioxneet/biox7.html"},
@@ -338,7 +337,6 @@
   },
 
   
-{
   "STD11_BIOLOGY": {
     "CHAP1": [
       "bioxneet/BIO11THCH1WS3.html"
