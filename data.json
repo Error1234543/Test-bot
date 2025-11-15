@@ -102,6 +102,91 @@
     ]
   },
 
+
+  "NEET X PHY (STD-11)": {
+    "BASIC": [
+      {"label": "TEST 1", "path": "neetx26/11THPHYBASICWS1.html"},
+      {"label": "TEST 9", "path": "neetx26/11THPHYBASICWS9.html"}
+    ],
+    "CHAPTER 1": [],
+    "CHAPTER 2": [
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH2WS2.html"},
+      {"label": "TEST 4", "path": "neetx26/PHY11THCH2WS4.html"}
+    ],
+    "CHAPTER 3": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH3WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH3WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH3WS3.html"}
+    ],
+    "CHAPTER 4": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH4WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH4WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH4WS3.html"},
+      {"label": "TEST 4 (P1)", "path": "neetx26/PHY11THCH4WS4 P1.html"},
+      {"label": "TEST 4 (P2)", "path": "neetx26/PHY11THCH4WS4 P2.html"}
+    ],
+    "CHAPTER 5": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH5WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH5WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH5WS3.html"},
+      {"label": "TEST 4", "path": "neetx26/PHY11THCH5WS4.html"},
+      {"label": "TEST 5", "path": "neetx26/PHY11THCH5WS5.html"}
+    ],
+    "CHAPTER 6": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH6WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH6WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH6WS3.html"},
+      {"label": "TEST 4", "path": "neetx26/PHY11THCH6WS4.html"},
+      {"label": "TEST 5", "path": "neetx26/PHY11THCH6WS5.html"},
+      {"label": "TEST 6", "path": "neetx26/PHY11THCH6WS6.html"},
+      {"label": "TEST 7", "path": "neetx26/PHY11THCH6WS7.html"}
+    ],
+    "CHAPTER 7": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH7WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH7WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH7WS3.html"},
+      {"label": "TEST 4", "path": "neetx26/PHY11THCH7WS4.html"},
+      {"label": "TEST 5", "path": "neetx26/PHY11THCH7WS5.html"}
+    ],
+    "CHAPTER 8": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH8WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH8WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH8WS3.html"},
+      {"label": "TEST 4", "path": "neetx26/PHY11THCH8WS4.html"},
+      {"label": "TEST 5", "path": "neetx26/PHY11THCH8WS5.html"},
+      {"label": "TEST 6", "path": "neetx26/PHY11THCH8WS6.html"},
+      {"label": "TEST 7", "path": "neetx26/PHY11THCH8WS7.html"}
+    ],
+    "CHAPTER 9": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH9WS1.html"}
+    ],
+    "CHAPTER 10": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH10WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH10WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH10WS3.html"}
+    ],
+    "CHAPTER 11": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH11WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH11WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH11WS3.html"}
+    ],
+    "CHAPTER 12": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH12WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH12WS2.html"}
+    ],
+    "CHAPTER 13": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH13WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH13WS2.html"},
+      {"label": "TEST 3", "path": "neetx26/PHY11THCH13WS3.html"},
+      {"label": "TEST 4", "path": "neetx26/PHY11THCH13WS4.html"}
+    ],
+    "CHAPTER 14": [
+      {"label": "TEST 1", "path": "neetx26/PHY11THCH14WS1.html"},
+      {"label": "TEST 2", "path": "neetx26/PHY11THCH14WS2.html"}
+    ]
+  }
+}
+
   "NEET X PHY (STD-12": {
     "STD XII - Chap 1": [
       {"label": "TEST 1", "path": "neetx26/phyx1.html"},
