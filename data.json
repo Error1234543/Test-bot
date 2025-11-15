@@ -102,7 +102,7 @@
     ]
   },
 
-  "NEET X PHY (Chapter-wise Tests)": {
+  "NEET X PHY (STD-12": {
     "STD XII - Chap 1": [
       {"label": "TEST 1", "path": "neetx26/phyx1.html"},
       {"label": "TEST 2", "path": "neetx26/phyx2.html"},
@@ -231,7 +231,7 @@
     ]
   },
 
-  "NEET X BIO": {
+  "NEET X BIO STD 12": {
     "CHAP-1": [
       {"label": "TEST 1", "path": "bioxneet/biox1.html"},
       {"label": "TEST 2", "path": "bioxneet/biox2.html"},
@@ -338,7 +338,7 @@
 
   
  
-  "STD11_BIOLOGY": {
+  "NEET X BIO STD 11": {
     "CHAP1": [
       {"label": "TEST 1", "path": "bioxneet/BIO11THCH1WS3.html"}
     ],
