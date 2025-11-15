@@ -560,5 +560,122 @@
       {"label": "TEST 1", "path": "neetx26/PHY11THCH14WS1.html"},
       {"label": "TEST 2", "path": "neetx26/PHY11THCH14WS2.html"}
     ]
+  },
+
+  "STD12_CHEMISTRY": {
+
+    "CHAP1": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH1WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH1WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH1WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH1WS4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "chem/CHE12THCH1WS5.html"}
+    ],
+
+    "CHAP2": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH2WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH2WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH2WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH2WS4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "chem/CHE12THCH2WS5.html"}
+    ],
+
+    "CHAP3": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH3WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH3WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH3WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH3WS4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "chem/CHE12THCH3WS5.html"},
+      {"label": "TEST 6 (CHEM)", "path": "chem/CHE12THCH3WS6.html"},
+      {"label": "TEST 7 (CHEM)", "path": "chem/CHE12THCH3WS7.html"}
+    ],
+
+    "CHAP4": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH4WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH4WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH4WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH4WS4.html"}
+    ],
+
+    "CHAP5": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH5WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH5WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH5WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH5WS4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "chem/CHE12THCH5WS5.html"}
+    ],
+
+    "CHAP6": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH6WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH6WS2.html"}
+    ],
+
+    "CHAP7": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH7WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH7WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH7WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH7WS4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "chem/CHE12THCH7WS5.html"}
+    ],
+
+    "CHAP8": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH8WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH8WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH8WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH8WS4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "chem/CHE12THCH8WS5.html"}
+    ],
+
+    "CHAP9": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH9WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH9WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH9WS3.html"}
+    ],
+
+    "CHAP10": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH10WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH10WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH10WS3.html"}
+    ],
+
+    "CHAP11": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH11WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH11WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH11WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH11WS4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "chem/CHE12THCH11WS5.html"},
+      {"label": "TEST 6 (CHEM)", "path": "chem/CHE12THCH11WS6.html"}
+    ],
+
+    "CHAP12": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH12WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH12WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH12WS3.html"},
+      {"label": "TEST 4 (CHEM)", "path": "chem/CHE12THCH12WS4.html"},
+      {"label": "TEST 5 (CHEM)", "path": "chem/CHE12THCH12WS5.html"},
+      {"label": "TEST 6 (CHEM)", "path": "chem/CHE12THCH12WS6.html"}
+    ],
+
+    "CHAP13": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH13WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH13WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH13WS3.html"}
+    ],
+
+    "CHAP14": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH14WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH14WS2.html"},
+      {"label": "TEST 3 (CHEM)", "path": "chem/CHE12THCH14WS3.html"}
+    ],
+
+    "CHAP15": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH15WS1.html"},
+      {"label": "TEST 2 (CHEM)", "path": "chem/CHE12THCH15WS2.html"}
+    ],
+
+    "CHAP16": [
+      {"label": "TEST 1 (CHEM)", "path": "chem/CHE12THCH16WS1.html"}
+    ]
+
   }
 }
