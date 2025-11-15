@@ -106,24 +106,43 @@
     "STD 11": {
       "STD XI - BASIC": [
         {"label": "TEST 1", "path": "neetxphy11/11THPHYBASICWS1.html"},
+        {"label": "TEST 2", "path": "neetxphy11/11THPHYBASICWS2.html"},
+        {"label": "TEST 3", "path": "neetxphy11/11THPHYBASICWS3.html"},
+        {"label": "TEST 4", "path": "neetxphy11/11THPHYBASICWS4.html"},
+        {"label": "TEST 5", "path": "neetxphy11/11THPHYBASICWS5.html"},
+        {"label": "TEST 6", "path": "neetxphy11/11THPHYBASICWS6.html"},
+        {"label": "TEST 7", "path": "neetxphy11/11THPHYBASICWS7.html"},
+        {"label": "TEST 8", "path": "neetxphy11/11THPHYBASICWS8.html"},
         {"label": "TEST 9", "path": "neetxphy11/11THPHYBASICWS9.html"}
       ],
+
+      "STD XI - Chap 1": [
+        {"label": "TEST 1", "path": "neetxphy11/PHY11THCH1WS1.html"},
+        {"label": "TEST 2", "path": "neetxphy11/PHY11THCH1WS2.html"},
+        {"label": "TEST 3", "path": "neetxphy11/PHY11THCH1WS3.html"}
+      ],
+
       "STD XI - Chap 2": [
+        {"label": "TEST 1", "path": "neetxphy11/PHY11THCH2WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH2WS2.html"},
+        {"label": "TEST 3", "path": "neetxphy11/PHY11THCH2WS3.html"},
         {"label": "TEST 4", "path": "neetxphy11/PHY11THCH2WS4.html"}
       ],
+
       "STD XI - Chap 3": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH3WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH3WS2.html"},
         {"label": "TEST 3", "path": "neetxphy11/PHY11THCH3WS3.html"}
       ],
+
       "STD XI - Chap 4": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH4WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH4WS2.html"},
         {"label": "TEST 3", "path": "neetxphy11/PHY11THCH4WS3.html"},
-        {"label": "TEST 4 P1", "path": "neetxphy11/PHY11THCH4WS4 P1.html"},
-        {"label": "TEST 4 P2", "path": "neetxphy11/PHY11THCH4WS4 P2.html"}
+        {"label": "TEST 4 P1", "path": "neetxphy11/PHY11THCH4WS4P1.html"},
+        {"label": "TEST 4 P2", "path": "neetxphy11/PHY11THCH4WS4P2.html"}
       ],
+
       "STD XI - Chap 5": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH5WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH5WS2.html"},
@@ -131,6 +150,7 @@
         {"label": "TEST 4", "path": "neetxphy11/PHY11THCH5WS4.html"},
         {"label": "TEST 5", "path": "neetxphy11/PHY11THCH5WS5.html"}
       ],
+
       "STD XI - Chap 6": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH6WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH6WS2.html"},
@@ -140,6 +160,7 @@
         {"label": "TEST 6", "path": "neetxphy11/PHY11THCH6WS6.html"},
         {"label": "TEST 7", "path": "neetxphy11/PHY11THCH6WS7.html"}
       ],
+
       "STD XI - Chap 7": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH7WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH7WS2.html"},
@@ -147,6 +168,7 @@
         {"label": "TEST 4", "path": "neetxphy11/PHY11THCH7WS4.html"},
         {"label": "TEST 5", "path": "neetxphy11/PHY11THCH7WS5.html"}
       ],
+
       "STD XI - Chap 8": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH8WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH8WS2.html"},
@@ -156,34 +178,41 @@
         {"label": "TEST 6", "path": "neetxphy11/PHY11THCH8WS6.html"},
         {"label": "TEST 7", "path": "neetxphy11/PHY11THCH8WS7.html"}
       ],
+
       "STD XI - Chap 9": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH9WS1.html"}
       ],
-      "STD XI - Chap 10": [
+
+"STD XI - Chap 10": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH10WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH10WS2.html"},
         {"label": "TEST 3", "path": "neetxphy11/PHY11THCH10WS3.html"}
       ],
+
       "STD XI - Chap 11": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH11WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH11WS2.html"},
         {"label": "TEST 3", "path": "neetxphy11/PHY11THCH11WS3.html"}
       ],
+
       "STD XI - Chap 12": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH12WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH12WS2.html"}
       ],
+
       "STD XI - Chap 13": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH13WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH13WS2.html"},
         {"label": "TEST 3", "path": "neetxphy11/PHY11THCH13WS3.html"},
         {"label": "TEST 4", "path": "neetxphy11/PHY11THCH13WS4.html"}
       ],
+
       "STD XI - Chap 14": [
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH14WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH14WS2.html"}
-      ]
-    },
+           ]
+       },
+
     "STD 12": {
       "STD XII - Chap 1": [
         {"label": "TEST 1", "path": "neetx26/phyx1.html"},
