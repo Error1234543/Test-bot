@@ -104,7 +104,6 @@
 
   
   "NEET X PHY": {
-    
     "STD 11": {
       "STD XI - BASIC": [
         {"label": "TEST 1", "path": "neetxphy11/11THPHYBASICWS1.html"},
@@ -198,7 +197,7 @@
         {"label": "TEST 1", "path": "neetxphy11/PHY11THCH14WS1.html"},
         {"label": "TEST 2", "path": "neetxphy11/PHY11THCH14WS2.html"}
       ]
-   
+   },
 
     "STD 12": {
       "STD XII - Chap 1": [
@@ -355,7 +354,8 @@
       {"label": "TEST 2", "path": "neetx26/phyx41.html"},
       {"label": "TEST 3", "path": "neetx26/phyx42.html"}
     ]
- 
+ }
+},
   "Mock Tests & GUJCET": {
     "Mock Tests": [
       {"label": "Mock Test 1", "path": "mock_tests/mock1.html"},
