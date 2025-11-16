@@ -12,7 +12,7 @@ WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"  # GitHub Pages U
 
 # Telegram channel & WhatsApp group links
 TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
-WHATSAPP_LINK = "https://whatsapp.com/channel/0029VbBL8BiIiRorHQX6Pw31"
+WHATSAPP_LINK = "t.me/NEET_JEE_GUJ"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
