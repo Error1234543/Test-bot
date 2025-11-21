@@ -834,5 +834,12 @@
       {"label": "TEST 2 (CHEM)", "path": "11thchem/CHE11THCH14WS2.html"}
     ]
 
+  },
+
+
+  "PRO TEST": {
+    "TEST LIST": [
+      { "label": "TEST 1", "path": "firephy/firephy1.html" }
+    ]
   }
 }
