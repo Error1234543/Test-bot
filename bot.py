@@ -11,8 +11,8 @@ BOT_TOKEN = "8358671009:AAEgt3oUIcS_YxEpwQVKwsJRiWos89bKQuc"
 WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"  # GitHub Pages URL
 
 # Telegram channel & WhatsApp group links
-TELEGRAM_CHANNEL = "@PROTESTBOTCHANNL"
-WHATSAPP_LINK = "https://t.me/PROTESTBOTCHANNL"
+TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
+WHATSAPP_LINK = "https://t.me/NEET_JEE_GUJ"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
