@@ -829,17 +829,15 @@
       {"label": "TEST 8 (CHEM)", "path": "11thchem/CHE11THCH13WS8.html"}
     ],
 
-    "CHAP14": [
-      {"label": "TEST 1 (CHEM)", "path": "11thchem/CHE11THCH14WS1.html"},
-      {"label": "TEST 2 (CHEM)", "path": "11thchem/CHE11THCH14WS2.html"}
-    ]
-
-  },
-
+   {
+  "CHAP14": [
+    { "label": "TEST 1 (CHEM)", "path": "11thchem/CHE11THCH14WS1.html" },
+    { "label": "TEST 2 (CHEM)", "path": "11thchem/CHE11THCH14WS2.html" }
+  ],
 
   "PRO TEST": {
     "TEST LIST": [
-      { "label": "TEST 1", "path": "firephy/firephy1.html" }
+      { "label": "TEST 1", "path": "firephy/firephy1.html" },
       { "label": "TEST 2", "path": "firephy/firephy2.html" }
     ]
   }
