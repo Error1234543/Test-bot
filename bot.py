@@ -7,7 +7,7 @@ import threading
 import logging
 
 # ---------------- CONFIG ----------------
-BOT_TOKEN = "8358671009:AAEgt3oUIcS_YxEpwQVKwsJRiWos89bKQuc"
+BOT_TOKEN = "8271928754:AAHcymB4lNx0xSdkoWQuS3bZosDlSuOvAdk"
 WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"  # GitHub Pages URL
 
 # Telegram channel & WhatsApp group links
