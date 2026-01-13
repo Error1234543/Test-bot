@@ -10,7 +10,7 @@ import logging
 BOT_TOKEN = "8271928754:AAHcymB4lNx0xSdkoWQuS3bZosDlSuOvAdk"
 WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"
 
-ADMIN_ID = 7447651332  # 🔴 Apna Telegram ID
+ADMIN_ID = 8226637107  # 🔴 Apna Telegram ID
 AUTHORIZED_FILE = "authorized.json"
 
 TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
