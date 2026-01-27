@@ -837,6 +837,7 @@
 
   "MOCK TEST": {
     "TEST LIST": [
+      { "label": "SYLLABUS", "path": "firephy/syllabus.html" },
       { "label": "TEST 1", "path": "firephy/firephy1.html" },
       { "label": "TEST 2", "path": "firephy/firephy2.html" },
       { "label": "TEST 3", "path": "firephy/firephy3.html" },
