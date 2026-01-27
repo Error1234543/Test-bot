@@ -835,7 +835,6 @@
     ]
   },
 
-{
   "MOCK TEST": {
     "TEST LIST": [
       { "label": "TEST 1", "path": "firephy/firephy1.html" },
