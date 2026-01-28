@@ -834,16 +834,17 @@
       { "label": "TEST 2 (CHEM)", "path": "11thchem/CHE11THCH14WS2.html" }
     ]
   },
-
-"MOCK TEST": {
-  "TEST LIST": [
-    { "label": "SYLLABUS", "path": "firephy/syllabus.html" },
-    { "label": "TEST 1", "path": "firephy/firephy1.html" },
-    { "label": "TEST 2", "path": "firephy/firephy2.html" },
-    { "label": "TEST 3", "path": "firephy/firephy3.html" },
-    { "label": "TEST 4", "path": "firephy/firephy4.html" },
-    { "label": "TEST 5", "path": "firephy/firephy5.html" },
-    { "label": "TEST 6", "path": "firephy/firephy6.html" },
-    { "label": "TEST 7", "path": "firephy/firephy7.html" }
-  ]
+{
+  "MOCK TEST": {
+    "TEST LIST": [
+      { "label": "SYLLABUS", "path": "firephy/syllabus.html" },
+      { "label": "TEST 1", "path": "firephy/firephy1.html" },
+      { "label": "TEST 2", "path": "firephy/firephy2.html" },
+      { "label": "TEST 3", "path": "firephy/firephy3.html" },
+      { "label": "TEST 4", "path": "firephy/firephy4.html" },
+      { "label": "TEST 5", "path": "firephy/firephy5.html" },
+      { "label": "TEST 6", "path": "firephy/firephy6.html" },
+      { "label": "TEST 7", "path": "firephy/firephy7.html" }
+    ]
+  }
 }
