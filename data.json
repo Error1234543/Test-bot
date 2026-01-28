@@ -843,7 +843,8 @@
       { "label": "TEST 3", "path": "firephy/firephy3.html" },
       { "label": "TEST 4", "path": "firephy/firephy4.html" },
       { "label": "TEST 5", "path": "firephy/firephy5.html" },
-      { "label": "TEST 6", "path": "firephy/firephy6.html" }
+      { "label": "TEST 6", "path": "firephy/firephy6.html" },
+      { "label": "TEST 7", "path": "firephy/firephy7.html" }
     ]
   }
 }
