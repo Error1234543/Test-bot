@@ -7,8 +7,8 @@ import threading
 import logging
 
 # ---------------- CONFIG ----------------
-BOT_TOKEN = "8585007953:AAEqP3K3_5y43YRoYc4h99Lzlg9uE-1rAHo"
-OWNER_ID = 7447651332  # <-- Apna Telegram ID
+BOT_TOKEN = "8271928754:AAHcymB4lNx0xSdkoWQuS3bZosDlSuOvAdk"
+OWNER_ID = 8226637107  # <-- Apna Telegram ID
 
 WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"
 
