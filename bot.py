@@ -7,8 +7,8 @@ import threading
 import logging
 
 # ---------------- CONFIG ----------------
-BOT_TOKEN = "8271928754:AAHcymB4lNx0xSdkoWQuS3bZosDlSuOvAdk"
-WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"  # WebApp URL
+BOT_TOKEN = "8585007953:AAEqP3K3_5y43YRoYc4h99Lzlg9uE-1rAHo"
+WEB_URL = "https://oldxhdj.netlify.app/"  # WebApp URL
 
 # Telegram channel & WhatsApp group links
 TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
