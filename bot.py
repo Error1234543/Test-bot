@@ -16,7 +16,8 @@ TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
 WHATSAPP_LINK = "https://t.me/NEET_JEE_GUJ"
 
 # Owner ID (replace with your Telegram ID)
-OWNER_ID = 7447651332
+OWNER_ID = 
+8226637107
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
