@@ -1,4 +1,3 @@
-
 import os
 import json
 import telebot
@@ -25,7 +24,9 @@ with open("data.json", "r") as f:
     DATA = json.load(f)
 
 # ---------------- ACCESS CONTROL ----------------
-ALLOWED_USERS = set()  # in-memory only
+ALLOWED_USERS = set()
+# Automatically allow owner
+ALLOWED_USERS.add(OWNER_ID)
 
 # ---------------- HEALTH CHECK SERVER ----------------
 class HealthHandler(BaseHTTPRequestHandler):
