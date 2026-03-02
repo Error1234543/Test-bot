@@ -8,7 +8,7 @@ import logging
 
 # ---------------- CONFIG ----------------
 BOT_TOKEN = "8271928754:AAHcymB4lNx0xSdkoWQuS3bZosDlSuOvAdk"
-WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"  # GitHub Pages URL
+WEB_URL = "https://hdhdhsjsjsjdjsjshdjdhdjdjdjdu.netlify.app/"  # WebApp URL
 
 # Telegram channel & WhatsApp group links
 TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
@@ -41,7 +41,6 @@ threading.Thread(target=run_health_server, daemon=True).start()
 def start_menu(msg):
     chat_id = msg.chat.id
 
-    # Show join buttons + dismiss
     kb = types.InlineKeyboardMarkup()
     kb.add(types.InlineKeyboardButton("✅ Join Telegram Channel", url=f"https://t.me/{TELEGRAM_CHANNEL.lstrip('@')}"))
     kb.add(types.InlineKeyboardButton("✅ Join WhatsApp Group", url=WHATSAPP_LINK))
@@ -96,10 +95,10 @@ def callback_handler(call):
     elif parts[0] == "BACK_MAIN":
         kb = types.InlineKeyboardMarkup()
         for cls in DATA.keys():
-
-kb.add(types.InlineKeyboardButton(text=cls, callback_data=f"STD|{cls}"))
+            kb.add(types.InlineKeyboardButton(text=cls, callback_data=f"STD|{cls}"))
         bot.edit_message_text("📘 Select Class:", call.message.chat.id,
                               call.message.message_id, reply_markup=kb)
+
 # ---------------- START BOT ----------------
 logging.basicConfig(level=logging.INFO)
 logging.info("🤖 Bot started. Health server running on port 8000.")
