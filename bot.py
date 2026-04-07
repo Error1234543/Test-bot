@@ -8,7 +8,7 @@ import logging
 
 # ---------------- CONFIG ----------------
 BOT_TOKEN = "8585007953:AAEqP3K3_5y43YRoYc4h99Lzlg9uE-1rAHo"
-WEB_URL = "https://oldxhdj.netlify.app/"
+WEB_URL = "https://oldxhdjshshshs.netlify.app/"
 OWNER_ID = 8226637107  
 
 TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
