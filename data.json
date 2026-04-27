@@ -847,7 +847,15 @@
       { "label": "TEST 7", "path": "firephy/firephy7.html" },
       { "label": "TEST 8", "path": "firephy/firephy8.html" },
       { "label": "TEST 9", "path": "firephy/firephy9.html" },
-      { "label": "TEST 10", "path": "firephy/firephy10.html" }
+      { "label": "TEST 10", "path": "firephy/firephy10.html" },
+      { "label": "TEST 11", "path": "firephy/firephy11.html" },
+      { "label": "TEST 12", "path": "firephy/firephy12.html" },
+      { "label": "TEST 13", "path": "firephy/firephy13.html" },
+     { "label": "TEST 14", "path": "firephy/firephy14.html" },
+     { "label": "TEST 15", "path": "firephy/firephy15.html" },
+     { "label": "TEST 16", "path": "firephy/firephy16.html" },
+     { "label": "TEST 17", "path": "firephy/firephy17.html" },
+     { "label": "TEST 18", "path": "firephy/firephy18.html" }
     ]
   }
 }
