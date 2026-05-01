@@ -7,14 +7,13 @@ import threading
 import logging
 
 # ---------------- CONFIG ----------------
-BOT_TOKEN = "8585007953:AAEqP3K3_5y43YRoYc4h99Lzlg9uE-1rAHo"
-WEB_URL = "https://i.ibb.co/7tShY3Z7/x.jpg"
-OWNER_ID = 8226637107  
+BOT_TOKEN = "YOUR_NEW_TOKEN"   # 🔴 नया token डालना जरूरी
+WEB_URL = "https://oldxhdjshshshs.netlify.app/"  # 🔴 ये सही रखो (image link मत डालना)
 
 CHANNEL_LINK = "https://t.me/+NGUSfa7ns8c4OTll"
-CHANNEL_USERNAME = "@NEET_JEE_GUJ"  # verify ke liye
+CHANNEL_USERNAME = "@NEET_JEE_GUJ"
 
-START_IMAGE = "https://i.ibb.co/your-image.jpg"  # 🔁 baad me replace kar dena
+START_IMAGE = "image.jpg"  # ✅ local image (repo me upload karna)
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -32,7 +31,7 @@ def start_menu(msg):
     kb.add(types.InlineKeyboardButton("📢 Join Channel", url=CHANNEL_LINK))
     kb.add(types.InlineKeyboardButton("✅ Verify Joined", callback_data="VERIFY"))
 
-    caption = """🎯 **NEET Gujarati Test Bot 2026**
+    caption = """🎯 *NEET Gujarati Test Bot 2026*
 
 📚 Yaha aapko milenge:
 
@@ -42,11 +41,21 @@ def start_menu(msg):
 📊 Chapter Wise 5+ Tests  
 🔥 Har Subject me 200+ Practice Tests  
 
-💡 Perfect preparation for NEET aspirants (Gujarati Medium)
+💡 Perfect preparation for NEET (Gujarati Medium)
 
 👇 Pehle channel join karo aur verify karo fir tests access karo."""
 
-    bot.send_photo(msg.chat.id, START_IMAGE, caption=caption, reply_markup=kb)
+    try:
+        bot.send_photo(
+            msg.chat.id,
+            open(START_IMAGE, "rb"),   # ✅ LOCAL IMAGE FIX
+            caption=caption,
+            parse_mode="Markdown",
+            reply_markup=kb
+        )
+    except Exception as e:
+        print("Image Error:", e)
+        bot.send_message(msg.chat.id, caption, parse_mode="Markdown", reply_markup=kb)
 
 # ---------------- VERIFY ----------------
 @bot.callback_query_handler(func=lambda c: c.data == "VERIFY")
@@ -56,16 +65,16 @@ def verify_user(call):
 
     try:
         member = bot.get_chat_member(CHANNEL_USERNAME, user_id)
+
         if member.status in ["member", "administrator", "creator"]:
             bot.answer_callback_query(call.id, "✅ Verified Successfully!")
-
             show_main_menu(chat_id, call.message.message_id)
-
         else:
-            bot.answer_callback_query(call.id, "❌ Join Channel First!", show_alert=True)
+            bot.answer_callback_query(call.id, "❌ Pehle channel join karo!", show_alert=True)
 
-    except:
-        bot.answer_callback_query(call.id, "⚠️ Error checking membership", show_alert=True)
+    except Exception as e:
+        print("Verify Error:", e)
+        bot.answer_callback_query(call.id, "⚠️ Verification error", show_alert=True)
 
 # ---------------- MAIN MENU ----------------
 def show_main_menu(chat_id, mid):
@@ -73,12 +82,15 @@ def show_main_menu(chat_id, mid):
     for cls in DATA.keys():
         kb.add(types.InlineKeyboardButton(text=cls, callback_data=f"STD|{cls}"))
 
-    bot.edit_message_caption(
-        "📘 Select Your Category:",
-        chat_id,
-        mid,
-        reply_markup=kb
-    )
+    try:
+        bot.edit_message_caption(
+            "📘 Select Your Category:",
+            chat_id,
+            mid,
+            reply_markup=kb
+        )
+    except:
+        bot.send_message(chat_id, "📘 Select Your Category:", reply_markup=kb)
 
 # ---------------- CALLBACK ----------------
 @bot.callback_query_handler(func=lambda c: True)
@@ -87,40 +99,56 @@ def callback_handler(call):
     chat_id = call.message.chat.id
     mid = call.message.message_id
 
-    if call.data.startswith("STD"):
-        cls = parts[1]
-        kb = types.InlineKeyboardMarkup()
-        for sub in DATA.get(cls, {}).keys():
-            kb.add(types.InlineKeyboardButton(text=sub, callback_data=f"SUB|{cls}|{sub}"))
-        kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data="BACK_MAIN"))
+    try:
+        if call.data.startswith("STD"):
+            cls = parts[1]
+            kb = types.InlineKeyboardMarkup()
 
-        bot.edit_message_caption(f"📘 {cls} → Select Subject:", chat_id, mid, reply_markup=kb)
+            for sub in DATA.get(cls, {}).keys():
+                kb.add(types.InlineKeyboardButton(text=sub, callback_data=f"SUB|{cls}|{sub}"))
 
-    elif call.data.startswith("SUB"):
-        cls, sub = parts[1], parts[2]
-        kb = types.InlineKeyboardMarkup()
-        for i, t in enumerate(DATA[cls][sub]):
-            kb.add(types.InlineKeyboardButton(text=f"📝 {t['label']}", callback_data=f"OPEN|{cls}|{sub}|{i}"))
-        kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data=f"STD|{cls}"))
+            kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data="BACK_MAIN"))
 
-        bot.edit_message_caption(f"🧪 {cls} → {sub}:", chat_id, mid, reply_markup=kb)
+            bot.edit_message_caption(f"📘 {cls} → Select Subject:", chat_id, mid, reply_markup=kb)
 
-    elif call.data.startswith("OPEN"):
-        cls, sub, idx = parts[1], parts[2], int(parts[3])
-        test_data = DATA[cls][sub][idx]
-        full_url = f"{WEB_URL}{test_data['path']}"
+        elif call.data.startswith("SUB"):
+            cls, sub = parts[1], parts[2]
+            kb = types.InlineKeyboardMarkup()
 
-        kb = types.InlineKeyboardMarkup()
-        kb.add(types.InlineKeyboardButton(
-            text=f"🚀 Open {test_data['label']}",
-            web_app=types.WebAppInfo(url=full_url)
-        ))
+            for i, t in enumerate(DATA[cls][sub]):
+                kb.add(types.InlineKeyboardButton(text=f"📝 {t['label']}", callback_data=f"OPEN|{cls}|{sub}|{i}"))
 
-        bot.send_message(chat_id, f"✅ Test Ready: **{test_data['label']}**\nClick below to start:", reply_markup=kb)
+            kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data=f"STD|{cls}"))
+
+            bot.edit_message_caption(f"🧪 {cls} → {sub}:", chat_id, mid, reply_markup=kb)
+
+        elif call.data.startswith("OPEN"):
+            cls, sub, idx = parts[1], parts[2], int(parts[3])
+            test_data = DATA[cls][sub][idx]
+
+            full_url = f"{WEB_URL}{test_data['path']}"
+
+            kb = types.InlineKeyboardMarkup()
+            kb.add(types.InlineKeyboardButton(
+                text=f"🚀 Open {test_data['label']}",
+                web_app=types.WebAppInfo(url=full_url)
+            ))
+
+            bot.send_message(
+                chat_id,
+                f"✅ Test Ready: *{test_data['label']}*\nClick below to start:",
+                parse_mode="Markdown",
+                reply_markup=kb
+            )
+
+        elif call.data == "BACK_MAIN":
+            show_main_menu(chat_id, mid)
+
         bot.answer_callback_query(call.id)
 
-    elif call.data == "BACK_MAIN":
-        show_main_menu(chat_id, mid)
+    except Exception as e:
+        print("Callback Error:", e)
+        bot.answer_callback_query(call.id, "⚠️ Error occurred", show_alert=True)
 
 # ---------------- SERVER ----------------
 class H(BaseHTTPRequestHandler):
@@ -135,4 +163,6 @@ threading.Thread(
 ).start()
 
 logging.basicConfig(level=logging.INFO)
+
+print("✅ Bot Started Successfully...")
 bot.infinity_polling()
