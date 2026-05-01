@@ -8,7 +8,7 @@ import logging
 
 # ---------------- CONFIG ----------------
 BOT_TOKEN = "YOUR_BOT_TOKEN"
-WEB_URL = "https://oldxhdjshshshs.netlify.app/"
+WEB_URL = "https://i.ibb.co/7tShY3Z7/x.jpg"
 OWNER_ID = 8226637107  
 
 CHANNEL_LINK = "https://t.me/+NGUSfa7ns8c4OTll"
