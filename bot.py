@@ -1,3 +1,4 @@
+
 import os
 import json
 import telebot
@@ -11,7 +12,7 @@ BOT_TOKEN = "YOUR_BOT_TOKEN"
 WEB_URL = "https://oldxhdjshshshs.netlify.app/"
 OWNER_ID = 8226637107
 
-TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
+TELEGRAM_LINK = "https://t.me/+NGUSfa7ns8c4OTll"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -56,16 +57,13 @@ def unban_user(msg):
         return
     try:
         uid = int(msg.text.split()[1])
-        if uid in banned_users:
-            banned_users.remove(uid)
-            save_json("banned.json", banned_users)
-            bot.reply_to(msg, f"✅ User {uid} unbanned")
-        else:
-            bot.reply_to(msg, "User not banned")
+        banned_users.discard(uid)
+        save_json("banned.json", banned_users)
+        bot.reply_to(msg, f"✅ User {uid} unbanned")
     except:
         bot.reply_to(msg, "Usage: /unban USER_ID")
 
-# ---------------- START ----------------
+# ---------------- START (IMAGE MESSAGE) ----------------
 @bot.message_handler(commands=['start'])
 def start_menu(msg):
     uid = msg.from_user.id
@@ -74,33 +72,37 @@ def start_menu(msg):
         bot.send_message(msg.chat.id, "🚫 You are banned from this bot.")
         return
 
+    # already verified → direct menu
     if uid in verified_users:
         show_main_menu(msg.chat.id)
         return
 
     kb = types.InlineKeyboardMarkup()
-    kb.add(types.InlineKeyboardButton(
-        "📢 Join Channel",
-        url=f"https://t.me/{TELEGRAM_CHANNEL.lstrip('@')}"
-    ))
+    kb.add(types.InlineKeyboardButton("📢 Join Channel", url=TELEGRAM_LINK))
     kb.add(types.InlineKeyboardButton("✔️ I Have Joined", callback_data="VERIFY"))
 
-    bot.send_message(
-        msg.chat.id,
+    caption = (
         "🎯 *NEET Gujarati Test Bot 2026*\n\n"
         "📚 Yaha aapko milenge:\n\n"
-        "🧪 NEET 2026 Mock Tests  \n"
-        "📘 Board Based Tests  \n"
-        "📖 Subject Wise Tests  \n"
-        "📊 Chapter Wise 5+ Tests  \n"
-        "🔥 Har Subject me 200+ Practice Tests  \n\n"
+        "🧪 NEET 2026 Mock Tests\n"
+        "📘 Board Based Tests\n"
+        "📖 Subject Wise Tests\n"
+        "📊 Chapter Wise 5+ Tests\n"
+        "🔥 Har Subject me 200+ Practice Tests\n\n"
         "💡 Perfect preparation for NEET (Gujarati Medium)\n\n"
-        "👇 Pehle channel join karo aur verify karo fir tests access karo\n\n"
+        "👇 Pehle channel join karo aur verify karo\n\n"
         "https://t.me/+NGUSfa7ns8c4OTll\n\n"
-        "✔️ Verify joined you 👇",
-        reply_markup=kb,
-        parse_mode="Markdown"
+        "✔️ Verify joined you 👇"
     )
+
+    with open("image.jpg", "rb") as img:
+        bot.send_photo(
+            msg.chat.id,
+            img,
+            caption=caption,
+            reply_markup=kb,
+            parse_mode="Markdown"
+        )
 
 # ---------------- VERIFY ----------------
 @bot.callback_query_handler(func=lambda c: c.data == "VERIFY")
