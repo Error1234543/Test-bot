@@ -7,13 +7,11 @@ import threading
 import logging
 
 # ---------------- CONFIG ----------------
-BOT_TOKEN = "8585007953:AAEqP3K3_5y43YRoYc4h99Lzlg9uE-1rAHo"   # 🔴 नया token डालना जरूरी
-WEB_URL = "https://oldxhdjshshshs.netlify.app/"  # 🔴 ये सही रखो (image link मत डालना)
+BOT_TOKEN = "YOUR_NEW_TOKEN"   # 🔴 नया token डालना जरूरी
+WEB_URL = "https://oldxhdjshshshs.netlify.app/"  # ✅ test site
 
 CHANNEL_LINK = "https://t.me/+NGUSfa7ns8c4OTll"
 CHANNEL_USERNAME = "@NEET_JEE_GUJ"
-
-START_IMAGE = "image.jpg"  # ✅ local image (repo me upload karna)
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -31,7 +29,7 @@ def start_menu(msg):
     kb.add(types.InlineKeyboardButton("📢 Join Channel", url=CHANNEL_LINK))
     kb.add(types.InlineKeyboardButton("✅ Verify Joined", callback_data="VERIFY"))
 
-    caption = """🎯 *NEET Gujarati Test Bot 2026*
+    text = """🎯 *NEET Gujarati Test Bot 2026*
 
 📚 Yaha aapko milenge:
 
@@ -45,17 +43,12 @@ def start_menu(msg):
 
 👇 Pehle channel join karo aur verify karo fir tests access karo."""
 
-    try:
-        bot.send_photo(
-            msg.chat.id,
-            open(START_IMAGE, "rb"),   # ✅ LOCAL IMAGE FIX
-            caption=caption,
-            parse_mode="Markdown",
-            reply_markup=kb
-        )
-    except Exception as e:
-        print("Image Error:", e)
-        bot.send_message(msg.chat.id, caption, parse_mode="Markdown", reply_markup=kb)
+    bot.send_message(
+        msg.chat.id,
+        text,
+        parse_mode="Markdown",
+        reply_markup=kb
+    )
 
 # ---------------- VERIFY ----------------
 @bot.callback_query_handler(func=lambda c: c.data == "VERIFY")
@@ -83,7 +76,7 @@ def show_main_menu(chat_id, mid):
         kb.add(types.InlineKeyboardButton(text=cls, callback_data=f"STD|{cls}"))
 
     try:
-        bot.edit_message_caption(
+        bot.edit_message_text(
             "📘 Select Your Category:",
             chat_id,
             mid,
@@ -109,7 +102,7 @@ def callback_handler(call):
 
             kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data="BACK_MAIN"))
 
-            bot.edit_message_caption(f"📘 {cls} → Select Subject:", chat_id, mid, reply_markup=kb)
+            bot.edit_message_text(f"📘 {cls} → Select Subject:", chat_id, mid, reply_markup=kb)
 
         elif call.data.startswith("SUB"):
             cls, sub = parts[1], parts[2]
@@ -120,7 +113,7 @@ def callback_handler(call):
 
             kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data=f"STD|{cls}"))
 
-            bot.edit_message_caption(f"🧪 {cls} → {sub}:", chat_id, mid, reply_markup=kb)
+            bot.edit_message_text(f"🧪 {cls} → {sub}:", chat_id, mid, reply_markup=kb)
 
         elif call.data.startswith("OPEN"):
             cls, sub, idx = parts[1], parts[2], int(parts[3])
