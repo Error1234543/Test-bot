@@ -7,7 +7,7 @@ import threading
 import logging
 
 # ---------------- CONFIG ----------------
-BOT_TOKEN = "YOUR_NEW_TOKEN"   # 🔴 नया token डालना जरूरी
+BOT_TOKEN = "8585007953:AAEqP3K3_5y43YRoYc4h99Lzlg9uE-1rAHo"   # 🔴 नया token डालना जरूरी
 WEB_URL = "https://oldxhdjshshshs.netlify.app/"  # 🔴 ये सही रखो (image link मत डालना)
 
 CHANNEL_LINK = "https://t.me/+NGUSfa7ns8c4OTll"
