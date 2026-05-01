@@ -7,13 +7,27 @@ import threading
 import logging
 
 # ---------------- CONFIG ----------------
-BOT_TOKEN = "8585007953:AAEqP3K3_5y43YRoYc4h99Lzlg9uE-1rAHo"   # 🔴 नया token डालना जरूरी
-WEB_URL = "https://oldxhdjshshshs.netlify.app/"  # ✅ test site
+BOT_TOKEN = "YOUR_BOT_TOKEN"
+WEB_URL = "https://oldxhdjshshshs.netlify.app/"
+OWNER_ID = 8226637107
 
-CHANNEL_LINK = "https://t.me/+NGUSfa7ns8c4OTll"
-CHANNEL_USERNAME = "@NEET_JEE_GUJ"
+TELEGRAM_CHANNEL = "@NEET_JEE_GUJ"
 
 bot = telebot.TeleBot(BOT_TOKEN)
+
+# ---------------- STORAGE ----------------
+def load_json(file, default):
+    if os.path.exists(file):
+        with open(file, "r") as f:
+            return set(json.load(f))
+    return set(default)
+
+def save_json(file, data):
+    with open(file, "w") as f:
+        json.dump(list(data), f)
+
+verified_users = load_json("verified.json", set())
+banned_users = load_json("banned.json", set())
 
 # ---------------- DATA ----------------
 try:
@@ -22,126 +36,142 @@ try:
 except:
     DATA = {}
 
+# ---------------- BAN ----------------
+@bot.message_handler(commands=['ban'])
+def ban_user(msg):
+    if msg.from_user.id != OWNER_ID:
+        return
+    try:
+        uid = int(msg.text.split()[1])
+        banned_users.add(uid)
+        save_json("banned.json", banned_users)
+        bot.reply_to(msg, f"🚫 User {uid} banned")
+    except:
+        bot.reply_to(msg, "Usage: /ban USER_ID")
+
+# ---------------- UNBAN ----------------
+@bot.message_handler(commands=['unban'])
+def unban_user(msg):
+    if msg.from_user.id != OWNER_ID:
+        return
+    try:
+        uid = int(msg.text.split()[1])
+        if uid in banned_users:
+            banned_users.remove(uid)
+            save_json("banned.json", banned_users)
+            bot.reply_to(msg, f"✅ User {uid} unbanned")
+        else:
+            bot.reply_to(msg, "User not banned")
+    except:
+        bot.reply_to(msg, "Usage: /unban USER_ID")
+
 # ---------------- START ----------------
 @bot.message_handler(commands=['start'])
 def start_menu(msg):
+    uid = msg.from_user.id
+
+    if uid in banned_users:
+        bot.send_message(msg.chat.id, "🚫 You are banned from this bot.")
+        return
+
+    if uid in verified_users:
+        show_main_menu(msg.chat.id)
+        return
+
     kb = types.InlineKeyboardMarkup()
-    kb.add(types.InlineKeyboardButton("📢 Join Channel", url=CHANNEL_LINK))
-    kb.add(types.InlineKeyboardButton("✅ Verify Joined", callback_data="VERIFY"))
-
-    text = """🎯 *NEET Gujarati Test Bot 2026*
-
-📚 Yaha aapko milenge:
-
-🧪 NEET 2026 Mock Tests  
-📘 Board Based Tests  
-📖 Subject Wise Tests  
-📊 Chapter Wise 5+ Tests  
-🔥 Har Subject me 200+ Practice Tests  
-
-💡 Perfect preparation for NEET (Gujarati Medium)
-
-👇 Pehle channel join karo aur verify karo fir tests access karo."""
+    kb.add(types.InlineKeyboardButton(
+        "📢 Join Channel",
+        url=f"https://t.me/{TELEGRAM_CHANNEL.lstrip('@')}"
+    ))
+    kb.add(types.InlineKeyboardButton("✔️ I Have Joined", callback_data="VERIFY"))
 
     bot.send_message(
         msg.chat.id,
-        text,
-        parse_mode="Markdown",
-        reply_markup=kb
+        "🎯 *NEET Gujarati Test Bot 2026*\n\n"
+        "📚 Yaha aapko milenge:\n\n"
+        "🧪 NEET 2026 Mock Tests  \n"
+        "📘 Board Based Tests  \n"
+        "📖 Subject Wise Tests  \n"
+        "📊 Chapter Wise 5+ Tests  \n"
+        "🔥 Har Subject me 200+ Practice Tests  \n\n"
+        "💡 Perfect preparation for NEET (Gujarati Medium)\n\n"
+        "👇 Pehle channel join karo aur verify karo fir tests access karo\n\n"
+        "https://t.me/+NGUSfa7ns8c4OTll\n\n"
+        "✔️ Verify joined you 👇",
+        reply_markup=kb,
+        parse_mode="Markdown"
     )
 
 # ---------------- VERIFY ----------------
 @bot.callback_query_handler(func=lambda c: c.data == "VERIFY")
 def verify_user(call):
-    user_id = call.from_user.id
-    chat_id = call.message.chat.id
+    uid = call.from_user.id
 
-    try:
-        member = bot.get_chat_member(CHANNEL_USERNAME, user_id)
+    if uid in banned_users:
+        bot.answer_callback_query(call.id, "You are banned!")
+        return
 
-        if member.status in ["member", "administrator", "creator"]:
-            bot.answer_callback_query(call.id, "✅ Verified Successfully!")
-            show_main_menu(chat_id, call.message.message_id)
-        else:
-            bot.answer_callback_query(call.id, "❌ Pehle channel join karo!", show_alert=True)
+    verified_users.add(uid)
+    save_json("verified.json", verified_users)
 
-    except Exception as e:
-        print("Verify Error:", e)
-        bot.answer_callback_query(call.id, "⚠️ Verification error", show_alert=True)
+    bot.answer_callback_query(call.id, "Verified!")
+    show_main_menu(call.message.chat.id)
 
 # ---------------- MAIN MENU ----------------
-def show_main_menu(chat_id, mid):
+def show_main_menu(chat_id):
     kb = types.InlineKeyboardMarkup()
     for cls in DATA.keys():
-        kb.add(types.InlineKeyboardButton(text=cls, callback_data=f"STD|{cls}"))
-
-    try:
-        bot.edit_message_text(
-            "📘 Select Your Category:",
-            chat_id,
-            mid,
-            reply_markup=kb
-        )
-    except:
-        bot.send_message(chat_id, "📘 Select Your Category:", reply_markup=kb)
+        kb.add(types.InlineKeyboardButton(cls, callback_data=f"STD|{cls}"))
+    bot.send_message(chat_id, "📘 Select Class:", reply_markup=kb)
 
 # ---------------- CALLBACK ----------------
 @bot.callback_query_handler(func=lambda c: True)
 def callback_handler(call):
+    uid = call.from_user.id
+
+    if uid in banned_users:
+        bot.answer_callback_query(call.id, "Banned")
+        return
+
     parts = call.data.split("|")
     chat_id = call.message.chat.id
     mid = call.message.message_id
 
-    try:
-        if call.data.startswith("STD"):
-            cls = parts[1]
-            kb = types.InlineKeyboardMarkup()
+    if call.data == "BACK_MAIN":
+        show_main_menu(chat_id)
 
-            for sub in DATA.get(cls, {}).keys():
-                kb.add(types.InlineKeyboardButton(text=sub, callback_data=f"SUB|{cls}|{sub}"))
+    elif parts[0] == "STD":
+        cls = parts[1]
+        kb = types.InlineKeyboardMarkup()
+        for sub in DATA.get(cls, {}).keys():
+            kb.add(types.InlineKeyboardButton(sub, callback_data=f"SUB|{cls}|{sub}"))
+        kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data="BACK_MAIN"))
+        bot.edit_message_text(f"📘 {cls} → Select Subject:", chat_id, mid, reply_markup=kb)
 
-            kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data="BACK_MAIN"))
-
-            bot.edit_message_text(f"📘 {cls} → Select Subject:", chat_id, mid, reply_markup=kb)
-
-        elif call.data.startswith("SUB"):
-            cls, sub = parts[1], parts[2]
-            kb = types.InlineKeyboardMarkup()
-
-            for i, t in enumerate(DATA[cls][sub]):
-                kb.add(types.InlineKeyboardButton(text=f"📝 {t['label']}", callback_data=f"OPEN|{cls}|{sub}|{i}"))
-
-            kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data=f"STD|{cls}"))
-
-            bot.edit_message_text(f"🧪 {cls} → {sub}:", chat_id, mid, reply_markup=kb)
-
-        elif call.data.startswith("OPEN"):
-            cls, sub, idx = parts[1], parts[2], int(parts[3])
-            test_data = DATA[cls][sub][idx]
-
-            full_url = f"{WEB_URL}{test_data['path']}"
-
-            kb = types.InlineKeyboardMarkup()
+    elif parts[0] == "SUB":
+        cls, sub = parts[1], parts[2]
+        kb = types.InlineKeyboardMarkup()
+        for i, t in enumerate(DATA[cls][sub]):
             kb.add(types.InlineKeyboardButton(
-                text=f"🚀 Open {test_data['label']}",
-                web_app=types.WebAppInfo(url=full_url)
+                f"📝 {t['label']}",
+                callback_data=f"OPEN|{cls}|{sub}|{i}"
             ))
+        kb.add(types.InlineKeyboardButton("⬅️ Back", callback_data=f"STD|{cls}"))
+        bot.edit_message_text(f"🧪 {cls} → {sub}:", chat_id, mid, reply_markup=kb)
 
-            bot.send_message(
-                chat_id,
-                f"✅ Test Ready: *{test_data['label']}*\nClick below to start:",
-                parse_mode="Markdown",
-                reply_markup=kb
-            )
+    elif parts[0] == "OPEN":
+        cls, sub, idx = parts[1], parts[2], int(parts[3])
+        test = DATA[cls][sub][idx]
+        url = f"{WEB_URL}{test['path']}"
 
-        elif call.data == "BACK_MAIN":
-            show_main_menu(chat_id, mid)
+        kb = types.InlineKeyboardMarkup()
+        kb.add(types.InlineKeyboardButton(
+            f"🚀 Open {test['label']}",
+            web_app=types.WebAppInfo(url=url)
+        ))
 
+        bot.send_message(chat_id, f"✅ {test['label']} ready!", reply_markup=kb)
         bot.answer_callback_query(call.id)
-
-    except Exception as e:
-        print("Callback Error:", e)
-        bot.answer_callback_query(call.id, "⚠️ Error occurred", show_alert=True)
 
 # ---------------- SERVER ----------------
 class H(BaseHTTPRequestHandler):
@@ -156,6 +186,4 @@ threading.Thread(
 ).start()
 
 logging.basicConfig(level=logging.INFO)
-
-print("✅ Bot Started Successfully...")
 bot.infinity_polling()
