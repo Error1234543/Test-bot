@@ -8,8 +8,8 @@ import threading
 import logging
 
 # ---------------- CONFIG ----------------
-BOT_TOKEN = "8585007953:AAEqP3K3_5y43YRoYc4h99Lzlg9uE-1rAHo"
-WEB_URL = "https://oldxhdjshshshs.netlify.app/"
+BOT_TOKEN = "8585007953:AAFYLzOFCNEyZIqcnEdxkv-PPbBHQFnV7vk"
+WEB_URL = "https://testwebsitesonic.netlify.app/"
 OWNER_ID = 8226637107
 
 TELEGRAM_LINK = "https://t.me/+NGUSfa7ns8c4OTll"
